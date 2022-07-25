@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Whs Portal</title>
 </head>
 <body>
+    <header>
+        <img src="whs-images/logo-whs.png" alt="Wakatipu high school logo">
+        <h4 id="ham"><a href="">hamburger</a></h4>
+    </header>
     <nav>
-        <ul>
+        <ul id="main-ul">
             <li class="nav"><a href="">Home</a></li>
             <li class="nav"><a href="">Financial</a></li>
             <li class="nav"><a href="">Attendance</a></li>
@@ -29,8 +33,75 @@
                     <li class="nav"><a href="">Awards</a></li>
                 </ul>
             </li>
-            
         </ul>
     </nav>
+
+    <div class="hero">
+        <div class="hero-img"></div>
+            <h1>Ad Alta</h1>
+            <h3>Reach for your heights</h3>
+    </div>
+    <div class="links-relevant">
+        <div class="wrapper">
+            <div class="linkwrap">
+                <div class="rele-img">
+                    <img src="whs-images/front-whs.jpg" alt="front of wakatipu high school " class="img-rele">
+                </div>
+                <div class="attend-words">
+                    <h1>Attendance</h1>
+                    <p>Check your classes, What you Have tomorrow and any Lates or Unjustafied</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="linkwrap">
+                <div class="rele-img">
+                    <img src="whs-images/rugby-whs.jpg" alt="front of wakatipu high school " class="img-rele">
+                </div>
+                <div class="attend-words" id="results">
+                    <h1>Results</h1>
+                    <p>Check your results for NCEA and in class tests</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="linkwrap">
+            <div class="rele-img">
+                <img src="whs-images/campy-whs.jpg" alt="front of wakatipu high school " class="img-rele">
+            </div>
+            <div class="attend-words" id="Financial">
+                <h1>Financial</h1>
+                <p>Check for payments</p>
+            </div>
+        </div>
+    </div>
+    <footer> 
+        <h1>Wakatipu High School Portal</h1>
+        <p>Quick links</p>
+        <ul id="footer-ul">
+            <li class="footer"><a href="">Home</a></li>
+            <li class="footer"><a href="">Financial</a></li>
+            <li class="footer"><a href="">Attendance</a></li>
+            <li class="footer"><a href="">Reports</a></li>
+            <li class="footer"><a href="">Details</a>
+            <li class="footer"><a href="">Groups</a></li>
+            <li class="footer"><a href="">Details</a></li>
+            <li class="footer"><a href="">Library</a></li>
+            <li class="footer"><a href="">NCEA Summary</a></li>
+            <li class="footer"><a href="">Current year results</a></li>
+            <li class="footer"><a href="">All results</a></li>
+            <li class="footer"><a href="">Awards</a></li>
+        </ul>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+    
+            menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+            })
+      </script>
 </body>
 </html>

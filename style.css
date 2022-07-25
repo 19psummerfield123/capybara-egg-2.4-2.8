@@ -1,38 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+:root {
+    --light-text: grey;
+    --dark-text: idk yet;
+    --light:#fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --bottom-shadow: 0 6px 6px -6px black;
+    --bigshadow: 3px 5px 7px rgba(104, 104, 104, 0.8);
+    --grey-background: #D9D9D9;
+    --dark-blue: #0D2959;
+    --fancy-font: 'Playfair Display', serif;
+
+}
+
 * {
     padding: 0;
     margin: 0;
 }
 
 nav {
-    width: 800px;
+    width: 100%;
     margin: auto;
+    background-color: white;
+    box-shadow: var(--bottom-shadow);
+    z-index: 0;
+    position: fixed;
+    margin-top: 100px;
+
 }
-ul {
+header img {
+    height: 100px;
+}
+nav ul {
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;   
+    width: 80%;
 }
-ul li:hover {
-    background: green;
+#main-ul {
+    margin: 0 auto;
 }
-ul li {
+header {
+    display: flex;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+header .title {
+    font-size: 35px;
+    margin: auto;
+    margin-left: 0px;
+    color: var(--dark-blue);
+}
+nav ul li:hover {
+    background: var(--grey-background);
+}
+nav ul li {
     width: 120px;
-    background: red;
+    background: #FFF;
     float: left;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    margin-right: 2px;
 }
-ul li a {
-    color: aliceblue;
+.hero {
+    background-image: url("whs-images/foyer-whs.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    z-index: -2;
+}
+
+.hero h1 {
+    font-size: 100px;
+    font-weight: 20px;
+    margin-top: 160px;
+}
+.hero h1, .hero h3 {
+    color: var(--dark-blue);
+    margin-left: 50px;
+}
+.hero h3 {
+    font-size: 50px;
+}
+
+nav ul li a {
+    color: var(--light-text);
     text-decoration: none;
 }
-ul li ul li {
-    border-top: 1px solid white;
+nav ul li ul li {
+    border-top: 1px solid var(--light);
     display: block;
+    background: var(--grey-background);
 }
-ul li ul {
+nav ul li ul {
     display: none;
 }
-ul li:hover ul{
+nav ul li:hover ul{
     display: block;
 }
+.rele-img img {
+    width: 100%;
+}
+.linkwrap {
+    display: grid;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    grid-template-areas: 
+    "img title"
+    "img words";
+    margin: auto;
+    width: 80%;
+    box-shadow: var(--shadow);
+}
+.linkwrap img{
+    grid-area: img;
+    width: 500px;
+    margin: -5px;
+    margin-top: 0.0125px;
+}
+.linkwrap h1 {
+    grid-area: title;
+    font-family: var(--fancy-font);
+}
+.linkwrap p {
+    grid-area: words;
+}
+.wrapper {
+    width: 100%;
+    margin-top: 50px;
+}
+.attend-words {
+    align-items: center;
+    text-align: left;
+    color: var(--dark-blue);
+    font-family: var(--fancy-font);
+    margin: auto;
+    margin-left: 60px;
+}
+footer ul li a {
+    color: var(--light-text);
+    text-decoration: none;
+}
+footer {
+    width: 100%;
+    margin: auto;
+    z-index: 0;
+    font-size: 20px;
+    background-color: var(--dark-blue);
+    color: yellow;
+
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    color: yellow;
+}
+footer ul li {
+    width: 120px;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+footer ul li a {
+    color: yellow;
+}
+@media only screen and (max-width: 700px) {
+    nav ul li {
+        display: none;
+    }
+}
+
