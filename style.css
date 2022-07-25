@@ -16,7 +16,9 @@
     padding: 0;
     margin: 0;
 }
-
+#ham {
+    display: none;
+}
 nav {
     width: 100%;
     margin: auto;
@@ -74,13 +76,12 @@ nav ul li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     z-index: -2;
 }
 
 .hero h1 {
     font-size: 100px;
-    font-weight: 20px;
+    font-weight: bold;
     margin-top: 160px;
 }
 .hero h1, .hero h3 {
@@ -112,7 +113,6 @@ nav ul li:hover ul{
 .linkwrap {
     display: grid;
     justify-content: left;
-    align-items: left;
     text-align: left;
     grid-template-areas: 
     "img title"
@@ -173,6 +173,13 @@ footer ul li {
     line-height: 35px;
     text-align: center;
 }
+footer h1 {
+    margin: 20px;
+}
+footer p {
+    margin: 10px;
+    margin-left: 20px;
+}
 footer ul li a {
     color: yellow;
 }
@@ -180,5 +187,13 @@ footer ul li a {
     nav ul li {
         display: none;
     }
+    #ham {
+        display: block;
+    }
+    .nav.active {
+        display: flex;
+    }
+    
+    
 }
 
