@@ -11,12 +11,13 @@
     <header>
         <img src="whs-images/logo-whs.png" alt="Wakatipu high school logo">
         <h4 id="ham"><a href="">hamburger</a></h4>
+        <link rel="icon" href="whs-images/main-whs.jpg">
     </header>
     <nav>
         <ul id="main-ul">
             <li class="nav"><a href="index.html">Home</a></li>
             <li class="nav"><a href="finance.html">Financial</a></li>
-            <li class="nav"><a href="">Attendance</a></li>
+            <li class="nav"><a href="attendance.html">Attendance</a></li>
             <li class="nav"><a href="">Reports</a></li>
             <li class="nav"><a href="">Details</a>
                 <ul>
@@ -87,7 +88,7 @@
         <ul id="footer-ul">
             <li class="footer"><a href="index.html">Home</a></li>
             <li class="footer"><a href="finance.html">Financial</a></li>
-            <li class="footer"><a href="">Attendance</a></li>
+            <li class="footer"><a href="attendance.html">Attendance</a></li>
             <li class="footer"><a href="">Reports</a></li>
             <li class="footer"><a href="">Details</a>
             <li class="footer"><a href="">Groups</a></li>
@@ -113,16 +114,14 @@
                 <p>email attendance@wakatipu.school.nz</p>
             </div>
         </div>
-        
     </footer>
     <script>
         const menuToggle = document.querySelector('.toggle');
         const showcase = document.querySelector('.showcase');
-    
             menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active');
             showcase.classList.toggle('active');
             })
-      </script>
+    </script>
 </body>
 </html>

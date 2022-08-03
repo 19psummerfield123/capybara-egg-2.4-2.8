@@ -217,4 +217,61 @@ footer ul li a {
     text-decoration: none;
     color: blue;
 }
+.title {
+    position: relative;
+    top: 200px;
+    left: 150px;
+    height: 200px;
+    color: var(--dark-blue);
+    font-size: larger;
+    width: 50%;
+}
+.table {
+    padding-top: 70px;
+    height: 290px;
+    margin: 0 auto;
+    font-size: larger;
+}
+table {
+    margin: auto;
+} 
+.table table, th, td {
+    border: 0.5px solid grey;
+    border-collapse: collapse;
+}
+.table td:nth-child(even), th:nth-child(even) {
+    background-color: var(--grey-background);
+}
+.footer-box img {
+    margin-top: -20px;
+}
+#table-2 {
+    margin-top: 20px;
+}
+.table td {
+    padding: 5px;
+    padding-left: 10px;
+}
+.word-t {
+    background-color: #0D2959;
+}
+.attend-t td {
+    padding: 5px;
+    padding-left: 10px;
+}
+.attend-t {
+    padding-top: 70px;
+    height: 290px;
+    margin: 0 auto;
+    font-size: larger;
+}
+.attend-t table, th, td {
+    border: 0.5px solid grey;
+    border-collapse: collapse;
+}
+#days-a {
+    background-color: #0D2959;
+    color: white;
+    font-weight: bold;
+}
 
