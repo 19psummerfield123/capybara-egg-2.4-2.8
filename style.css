@@ -261,7 +261,7 @@ table {
 }
 .attend-t {
     padding-top: 70px;
-    height: 290px;
+    height: 350px;
     margin: 0 auto;
     font-size: larger;
 }
@@ -273,5 +273,19 @@ table {
     background-color: #0D2959;
     color: white;
     font-weight: bold;
+    padding:px;
+}
+#days-a td {
+    padding: 20px 10px;
+}
+.period-a p{
+    padding: 20px 5px;
+}
+.present-a {
+    padding: 5px;
+    background-color: seagreen;
+    color: white;
+    width: 10px;
+    border-radius: 3px;
 }
 
