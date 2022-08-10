@@ -261,21 +261,23 @@ table {
 }
 .attend-t {
     padding-top: 70px;
-    height: 350px;
+    height: 400px;
     margin: 0 auto;
     font-size: larger;
+    display: flex;
+    justify-content: flex-start;
 }
 .attend-t table, th, td {
     border: 0.5px solid grey;
     border-collapse: collapse;
 }
-#days-a {
+.days-a {
     background-color: #0D2959;
     color: white;
     font-weight: bold;
     padding:px;
 }
-#days-a td {
+.days-a td {
     padding: 20px 10px;
 }
 .period-a p{
@@ -288,4 +290,27 @@ table {
     width: 10px;
     border-radius: 3px;
 }
-
+.where-a {
+    display: none;
+}
+.attend-t table:hover .where-a {
+    display: block;
+}
+.present-j {
+        padding: 5px;
+        background-color: gold;
+        color: black;
+        width: 10px;
+        border-radius: 3px;
+}
+.present-u {
+    padding: 5px;
+        background-color: crimson;
+        color: white;
+        width: 10px;
+        text-align: center;
+        border-radius: 3px;
+}
+.present-n {
+    height: 32px ;
+}
