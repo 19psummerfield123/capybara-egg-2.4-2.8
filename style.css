@@ -197,6 +197,12 @@ footer ul li a {
     .nav.active {
         display: flex;
     }
+    .linkwrap{
+        display: block;
+    }
+    .img-rele {
+        width: 50px;
+    }
     
     
 }
@@ -225,6 +231,7 @@ footer ul li a {
     color: var(--dark-blue);
     font-size: larger;
     width: 50%;
+    z-index: -1;
 }
 .table {
     padding-top: 70px;
@@ -261,11 +268,12 @@ table {
 }
 .attend-t {
     padding-top: 70px;
-    height: 400px;
+    height: 550px;
     margin: 0 auto;
     font-size: larger;
     display: flex;
     justify-content: flex-start;
+    width: 90%;
 }
 .attend-t table, th, td {
     border: 0.5px solid grey;
@@ -296,6 +304,9 @@ table {
 .attend-t table:hover .where-a {
     display: block;
 }
+.attend-t table:hover > #select-a {
+    display: none;
+}
 .present-j {
         padding: 5px;
         background-color: gold;
@@ -313,4 +324,36 @@ table {
 }
 .present-n {
     height: 32px ;
+}
+#select-a {
+    position: relative;
+    top: 100px;
+    left: 970px;
+    color: var(--dark-blue);
+    font-size: larger;
+    width: 20%;
+}
+#balls {
+    font-size: larger;
+    color: #0D2959;
+    font-weight: bold;
+    border: 0px;
+}
+#balls td{
+    padding: 17px;
+    border: 1px white solid;
+}
+.week-change {
+    height: 150px;
+    background-color: #0D2959;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+}
+.week-change p {
+    color: #D9D9D9;
+    padding: 10px;
+    font-size: larger;
+
 }
